@@ -1,9 +1,14 @@
-const max3 = (a, b, c) => {
-    if (a > b && a > c){
-        return a;
-    } else if (b > c) {
-        return b;
+const a = Number(prompt("Napište první číslo:"))
+const b = Number(prompt("Napište druhé číslo:"))
+const c = Number(prompt("Napište třetí číslo:"))
+let max3;
+
+    if (a >= b && a >= c){
+        max3 = a;
+    } else if (b >= a && b >= c) {
+        max3 = b;
     } else {
-        return c;
+        max3 = c;
     }
-}
+
+console.log("Nejvyšší číslo je " + max3)
