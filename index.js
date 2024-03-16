@@ -17,6 +17,6 @@ const updateSkill = (skill, skillLevel) => {
     update.style.width = skillLevel + "%"
 }
 
-updateSkill("#skill1", skillLevel = Number(prompt("Zadej úroveň schopnosti v HTML:")))
-updateSkill("#skill2", skillLevel = Number(prompt("Zadej úroveň schopnosti v CSS:")))
-updateSkill("#skill3", skillLevel = Number(prompt("Zadej úroveň schopnosti v JavaScript:")))
+updateSkill("#skill1", Number(prompt("Zadej úroveň schopnosti v HTML:")))
+updateSkill("#skill2", Number(prompt("Zadej úroveň schopnosti v CSS:")))
+updateSkill("#skill3", Number(prompt("Zadej úroveň schopnosti v JavaScript:")))
