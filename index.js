@@ -4,6 +4,12 @@ let skill
 let skillLevel
 
 const updateSkill = (skill, skillLevel) => {
+    if (skillLevel > 100) {
+        skillLevel = 100
+    }
+    if (skillLevel < 0) {
+        skillLevel = 0
+    }
     update = document.querySelector(skill + " .skill__progress")
     update2 = document.querySelector(skill + ' .skill__value')
 
