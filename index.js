@@ -1,14 +1,23 @@
 console.log('funguju!');
+let skill
+let skillLevel
 
-const skillHtml = prompt("Zadej úroveň dovednosti v HTML od 0 do 100:")
-const skillCss = prompt("Zadej úroveň dovednosti v CSS od 0 do 100:")
-const skillJavaScript = prompt("Zadej úroveň dovednosti v Javascript od 0 do 100:")
+const updateSkill = (skill, skillLevel) => {
+    document.querySelector('.skill__progress')
+    update = document.querySelector('skill__value')
+    update.textContent
 
-const contHtml = document.querySelector('.skill__progress');
-contHtml.textContent = (skillHtml + " / 100")
+}
 
-const contCss = document.querySelector('.skill__progress:nth-child(1)');
-contCss.textContent = (skillCss + " / 100")
+if (skill === "html")
+    document.querySelector('#skill1')
+else if (skill === "css")
+    document.querySelector('#skill2')
+else if (skill === "javascript")
+    document.querySelector('#skill3')
+else
+    document.write("Neznám tuto schopnost")
 
-const contJavaScript = document.querySelector('.skill__progress:nth-child(2)');
-contJavaScript.textContent = (skillJavaScript + " / 100")
+skillLevel = Number(prompt("Zadej úroveň schopnosti"))
+
+updateSkill(skill = prompt("Zadej schopnost:"),skillLevel = Number(prompt("Zadej úroveň schopnosti")))
